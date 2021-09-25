@@ -5,6 +5,6 @@ console.log("teste");
 	
 btn.onclick = function(){
 	var inputName = document.getElementById("name");
-	spanName.innerHTML = " Welcome " + inputName.value;
+	spanName.innerHTML = " Bienvenido " + inputName.value;
 	
 }

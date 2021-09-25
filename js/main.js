@@ -31,11 +31,11 @@ var Questions = [
     },
     {
         id: 3,
-        q: '¿Puedes nombrar el videojuego en el que pirateas el mundo para cometer varios delitos?',
-        a:  [{ text: "Cyberpunk", isCorrect: false },
-            { text: "God of War", isCorrect: false },
-            { text: "Watch Dogs", isCorrect: true },
-            { text: "Rust", isCorrect: false }
+        q: '¿Quién dirigió El Gran Lebowski?',
+        a:  [{ text: "Steven Spielberg", isCorrect: false },
+            { text: "George Lucas", isCorrect: false },
+            { text: "Los hermanos Coen", isCorrect: true },
+            { text: "Ninguno de los anteriores", isCorrect: false }
      
     ]
     },
@@ -176,7 +176,7 @@ evaluate[0].addEventListener("click", () => {
         result[0].innerHTML = "Correcto";
         result[0].style.color = "green";
     } else {
-        result[0].innerHTML = "Falso";
+        result[0].innerHTML = "Incorrecto";
         result[0].style.color = "red";
     }
     if (selected == "undefined") {
@@ -223,15 +223,6 @@ function myFunction() {
         console.log(id);
     }
   })
-
-//almacenamiento de datos en el storage y recuperación a traves de console.log
-  localStorage.setItem('Creador', 'Andrés')
-  localStorage.Apellido = 'Garcia Skinner'
-
-  let firstName = localStorage.getItem('Creador'),
-    lastName  = localStorage.Apellido
-
- console.log(`Hola, mi nombre es ${firstName} ${lastName} y soy el creador de este quiz`)
 
  //Objetos (en este caso el array de las preguntas) javascript en Jason. Usando el console.log se puede ver todo el array escrito del codigo.
  const enJSON = JSON.stringify(Questions);
